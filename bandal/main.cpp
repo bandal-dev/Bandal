@@ -18,7 +18,7 @@ enum Token {
   while (isspace(LastChar))
     LastChar = getchar();
 
-    if (isalpha(LastChar)) { // identifier: [a-zA-Z][a-zA-Z0-9]*
+    if (isalpha(LastChar)) {
   IdentifierStr = LastChar;
   while (isalnum((LastChar = getchar())))
     IdentifierStr += LastChar;
